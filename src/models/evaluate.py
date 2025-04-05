@@ -113,7 +113,7 @@ if __name__ == "__main__":
         # log sklearn model
         logged_model = mlflow.sklearn.log_model(model, "demand_prediction", 
                                  signature=model_signature,
-                                 pip_requirements="requirements.txt")
+                                 pip_requirements="requirements-dev.txt")
         
         
     # get the run id and arifact uri
